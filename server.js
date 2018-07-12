@@ -38,6 +38,13 @@ app.get('/bad', (req, res) => {
    });
 });
 
+app.get('/projects', (req, res) => {
+   res.send({
+       name: 'Project1',
+       desc: 'asd'
+   });
+});
+
 app.listen(port, () => {
     console.log(`server is up on ${port} port`);
 });
